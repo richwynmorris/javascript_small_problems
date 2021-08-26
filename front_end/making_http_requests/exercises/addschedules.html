@@ -1,0 +1,21 @@
+<head>
+  <script src='3.js'></script>
+</head>
+<body>
+  <button id='schedule_button'>Add More Schedules</button>
+  <form method='POST' action='http://localhost:3000/api/schedules'>
+    <fieldset>
+      <legend>Schedule 1</legend>
+      <label>Staff Name:</label>
+      <select name='staff_id'>
+      </select><br>
+
+      <label for='date'>Date:</label>
+      <input type='text' name='date' placeholder="mm-dd-yy"><br>
+
+      <label for='time'>Time:</label>
+      <input type='text' name='time' placeholder="hh:mm"><br>
+    </fieldset>
+  </form>
+  <button id='submit_button'>Submit</button>
+</body>

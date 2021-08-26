@@ -1,0 +1,33 @@
+<head>
+  <script src='4.js'></script>
+  <style>
+    #new-student-form {
+      background-color: darkgray;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Schedules</h1>
+  <form method='POST' action="">
+    <label for='timeslot'>Please select one schedule: </label>
+    <select name='id'></select>
+    <br>
+    <label for='email'>Email</label>
+    <input type="text" name="student_email" placeholder="example@example.com">
+  </form>
+  <button id='sub_button'>Submit</button>
+  <form method='POST' action="http://localhost:3000/api/students" id='new-student-form'>
+    <h1>Please Provide New Student Details</h1>
+    <br>
+    <label for='email'>Email</label>
+    <input type='text' name='email' placeholder="example@example.com">
+    <br>
+    <label for='name'>Name</label>
+    <input type='text' name='name' placeholder="First Name / Last Name ">
+    <br>
+    <label for='booking_sequence'>Booking Sequence</label>
+    <input type='text' name='booking_sequence' id='booking' readonly>
+    <button id="new-student-submit-btn">Submit</button>
+  </form>
+</body>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Test Page</title>
+  </head>
+  <body>
+    <script>
+      function displayMessage() {
+        let message = 'ALERT! SYSTEMS FAILING!'
+        alert(message)
+      }
+
+      document.addEventListener('DOMContentLoaded', event => {
+        let button = document.getElementById('alert')
+        button.addEventListener('click', displayMessage)
+      })
+    </script>
+    <textarea id="message"></textarea>
+    <button id="alert">Alert</button>
+  </body>
+</html>
